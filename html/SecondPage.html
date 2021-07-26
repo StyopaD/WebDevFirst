@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="ViewPort" content="width = device-width, initial-scale = 1.0">
+    <meta name="KeywWrds" content="HTML, CSS">
+    <meta name="Description" content="...">
+    <link rel="icon" href= "../res/ico/photoshop.ico">
+    <link rel="stylesheet" href="../css/gen_style.css">
+    <title>^This is a third page</title>
+</head>
+
+<body>
+    <!--A div is a non-semantic element, does not really mean anything or is anything, it just represents its childs!
+    a Form would be a Semantic element, because even though it can wrap other things, it does things, has actinos and 
+    is a clear semanitc element with purpose-->
+    <div class="header">
+    <h1 id="logo">Logo</h1>
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>Projects</li>
+                <li>SignUp</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- So, rather than using a boring and useless non-semantic element, we can use its analogous brothers-->
+    <header><!--The header element represents introductory content for its nearest ancestor sectioning content
+        or sectioning root element. A header typically contains a group of introductory or navigational aids.-->
+    <h1 id="logo">Logo</h1>
+        <nav><!--The nav element represents a section of a page that links to other pages or to parts within
+            the page: a section with navigation links.-->
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>Projects</li>
+                <li>SignUp</li>
+            </ul>
+        </nav>
+    </header>
+    <!--The main element represents the main content of the body of a document or application. The main content
+        area consists of content that is directly related to or expands upon the central topic of a document or
+        central functionality of an application.-->
+        
+    <!--It shall always be between header and footer, obviously. We can wrap everything inside of it.-->
+    <main>
+    <!--We will change this "gallery" shitty div for some semantic meaningful element:-->
+    <div class="gallery">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
+    <!--The section element represents a generic section of a document or application. A section, in this context,
+        is a thematic grouping of content. Each section should be identified, typically by including a heading
+        (h1- h6 element) as a child of the section element.-->
+    <section><!--Class and ID names should not be used for semantic and conceptual separations but for styling
+        purposes, generally speaking.-->
+        <h2>This is my real Gallery:</h2>
+        <!--We could have the images like this:
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        And... there is nothing really "wrong" about it, but recently there has been a new element added:
+        -->
+        <figure><img src="../res/img/jake-fagan-hm-udkI8hFI-unsplash.jpg" alt="Mountain"><figcaption>Nature Picture here!</figcaption></figure>
+    </section>
+
+    <h2>This is me:</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque sequi ipsam minima aliquid sunt accusantium molestiae dolorem at, ratione, praesentium impedit magnam? Ad explicabo mollitia, id, quis porro blanditiis distinctio modi accusantium totam vero ea iste voluptates obcaecati sequi aliquid recusandae at tenetur eos. Magni mollitia quisquam repellendus voluptas?</p>
+    
+    <h2 id="FirstArticle">Article Title1</h2>
+    <!-- we can have two different classes!-->
+    <p class="Article-text active">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt exercitationem adipisci qui modi, velit provident ex aliquam. Ipsam, quam quisquam nam neque illum dolore nostrum vel ea doloremque excepturi nulla libero? Vitae explicabo laborum nulla molestias ducimus voluptates, voluptatum consequuntur libero rerum omnis quos, dolorem officia accusamus exercitationem rem fugit?</p>
+    <h2 id="SecondArticle">Article Title2</h2>
+    <p class="Article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt exercitationem adipisci qui modi, velit provident ex aliquam. Ipsam, quam quisquam nam neque illum dolore nostrum vel ea doloremque excepturi nulla libero? Vitae explicabo laborum nulla molestias ducimus voluptates, voluptatum consequuntur libero rerum omnis quos, dolorem officia accusamus exercitationem rem fugit?</p>
+
+    <!-- You can have the "Aside" tab bar as well, for example, if you are in a book-reading related 
+    website, you might want to have the different chapters handy at the right of the page, this could
+    perfectly work for you then-->
+    <aside>
+        Put here whatever you want
+    </aside>
+
+    <!--What's more, we can even have not just "sections" but "articles" that have some meaning on their
+    own. Let us remember that these elements are conceptual moves, not really meaningful in terms of their
+    inner computation-->
+    <article>
+        <h2>This is an Article</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate odio quaerat labore ipsa cupiditate placeat nulla, numquam laboriosam beatae hic fuga quia eaque repellendus? Voluptatibus officia, a illo molestias quam fugiat eius expedita porro, excepturi iste reprehenderit impedit. Corporis voluptatum natus culpa laudantium! Repellat, asperiores molestiae quo rerum saepe sit.</p>
+    </article>
+    
+
+    </main>
+    
+    
+    <!--Also, rather than using a weird looking "<div class="footer"></div>, we can directly use the...
+        well, footer, where we typically have the contact information, copy link, messaging, social
+        network sites...-->
+    <footer>
+        <p>Created 2021 copyright blablabla &copy;</p>
+        <ul>
+            <li><a href="twitter.com/whatever">this is my twitter</a></li>
+            <li><a href="facebook.com/whatever">this is my facebook</a></li>
+            <li><a href="instagram.com/whatever">this is my instagram</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
