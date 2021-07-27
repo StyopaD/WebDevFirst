@@ -1,0 +1,75 @@
+* {
+    font-size: 16x;
+}
+
+#first-element {
+    font-size: 1em;
+    color: red;
+}
+
+/*Note that the CSS code can be overwritten by the next lines! BUT the
+class selector has priority over the generic type selector*/
+* {
+    font-size: 1.05em;
+}
+
+h1 {
+    color: rgb(2, 168, 77);
+}
+
+/*Only those h1 inside some element of the class random will have this*/
+.random h1 {
+    color: darkkhaki;
+}
+
+/*Another selector is the class+type, that has specificity of 011, higher
+than both class 010 and type 001*/
+li.first-title {
+    /*Something!*/
+}
+
+/*Also, if you write !important over ANY element's arguments, that will 
+overwrite all the other selected elements. That is NOT good practice, but
+it is some level of specificity :D*/
+
+/*Also, we can nest them up like this:*/
+.nav-links li a {
+    color: black;
+}
+
+/*To select every unordered list that appears in the html code from the
+element of class first-title and on, we use the +
+NOTE: this will ONLY work for those elements in the same context, so inside
+the same parent element!!!!!!!!!!!!*/
+.first-title+ul {
+    list-style: none;
+}
+
+/*To select all of those elements that are inside another element, we use >
+In this particular case, we are selecting the list elements that are inside an
+unordered list ul.
+NOTE that this does not necessarily mean we have to use the >, we can just use the
+first of the syntaxes...*/
+ul>li {
+    color: pink;
+}
+
+/*Note that the list elements outside a ul tag are NOT pink!*/
+/*also, we can use classes and ids, although ids would not make any... sense!*/
+.nav-links>li {
+    color: blue;
+}
+
+/*Also, to get the nth position of a list or even a child inside another elemnet:*/
+.nav-links li:nth-child(2) {
+    /*Note that the numbering does not start from 0 but 1!*/
+    color: yellow;
+}
+
+.first-title {
+    color: cornflowerblue;
+}
+
+#youtube-link {
+    color: #e971e9;
+}

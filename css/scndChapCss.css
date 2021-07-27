@@ -1,0 +1,42 @@
+/*html (and by html I mean the root of the file) sets the font size to 1 pixels!
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*It normally is on content-box, the problem with that is that if we put
+    a width of 100% on an element and a padding of 20px, we will perceive a 
+    100% width element with 40px of total padding as well, because the
+    content-box gets all the element's properties into account for the sizing
+    of itself. The border-box uses the limits of the screen for it.*/
+}
+
+.thing {
+    padding: 50px 130px;
+    /*First value is top-bottom, second omne is left right*/
+    margin: 50px 20px 10px 0;
+    width: 100%;
+    /*First value is top, second right, third omne is right, fourth left : clockwise
+    We can also use padding-to/right/left/bottom*/
+    background-color: brown;
+}
+
+#scndThing {
+    /*font-size: 20px;
+    Do not use pixels, they are fixed and generally speaking, not cool for
+    responsive projects and dynamic texts, they cna't be tweaked with google
+    font settings either, so that is shiet, brah.
+    To solve this, we have another type: EMs, which multiply the html base 
+    sizing for files!*/
+    font-size: 1.5em;
+    /*BUTTTTT! Take special care! The _em signature takes a look at the parent
+    element's font-size! If any of the parents have a settled _em signature of
+    1.5, for example, and you add a 2em afterwards in the child, it will be
+    16px*1.5 = 24px*2=48px, not 32px! Really important to note this :D*/
+    /*Also, if we create a font-size:20px; before anything inside of one of 
+    the childs, it will automatically break the inheritance and will start from
+    there the _em multiplications.*/
+
+    /*To fix this, we can use the _rem signature, that will ONLY inherit from
+    the root element (in this case the HTML)*/
+}
