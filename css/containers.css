@@ -1,0 +1,71 @@
+html {
+    font-size: 16px;
+}
+
+html,
+body,
+main {
+    height: 200%;
+}
+
+.bigContainer {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    font-size: 2rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.1rem;
+}
+
+/*If we add to the parent of some absoute-positioned childs the RELATIVE clause
+the chils will be absolute with regards to their parent, not the body of the file*/
+.container {
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+#up {
+    background: cadetblue;
+}
+
+#down {
+    background: rgb(185, 22, 22);
+}
+
+.box {
+    height: 20%;
+    width: 20%;
+    background: crimson;
+    position: absolute;
+}
+
+#box1 {
+    background: chartreuse;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+}
+
+#box2 {
+    background: rgb(0, 81, 255);
+    bottom: 50%;
+    left: 20%;
+    position: sticky;
+    top: 0%;
+}
+
+#box3 {
+    background: rgb(183, 0, 255);
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

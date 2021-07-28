@@ -1,0 +1,41 @@
+html {
+    font-size: 16px;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    font-size: 2rem;
+}
+
+/*Headers, divs and others act as blocks, they are displayed in blocks, whilst
+<a> images and others tags act inline*/
+h1 {
+    background-color: lightslategray;
+    height: 5rem;
+}
+
+/*inline objects can't have their height nor width specified, whilst they can
+have their horizontal margins tweaked! The padding works fine, but it will 
+NOT move things vertically, so the same as in vertical margin happens!*/
+a {
+    background: lightblue;
+    margin: 2rem;
+    padding: 1rem;
+    height: 5rem;
+    width: 20rem;
+}
+
+.blockGuys {
+    text-align: center;
+    display: block;
+    background-color: black;
+}
+
+.inlineBlockGuys {
+    display: inline-block;
+}

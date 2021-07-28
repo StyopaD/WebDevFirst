@@ -40,3 +40,27 @@
     /*To fix this, we can use the _rem signature, that will ONLY inherit from
     the root element (in this case the HTML)*/
 }
+
+button {
+    transition-duration: 0.15s;
+}
+
+#myButton {
+    margin: 5rem;
+    padding: 2rem 4rem;
+    background: none;
+    border: 0.3rem solid rgb(111, 82, 207);
+    color: rgb(111, 82, 207);
+    border-radius: 1rem;
+    border-top-left-radius: 2rem;
+}
+
+#myButton:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+#myButton:active {
+    transition-duration: 0s;
+    background-color: pink;
+}

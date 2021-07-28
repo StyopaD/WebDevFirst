@@ -1,0 +1,73 @@
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    font-size: 1rem;
+}
+
+html,
+body,
+main {
+    height: 100%;
+    width: 100%;
+}
+
+.box {
+    height: 20%;
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+    padding: 5rem 0rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.4rem;
+}
+
+button {
+    font-size: 1, 8rem;
+}
+
+nav {
+    background: rgb(61, 81, 102);
+    color: white;
+    padding: 3rem;
+}
+
+.clear {
+    clear: both;
+}
+
+nav h1 {
+    float: left;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+}
+
+nav li {
+    float: left;
+    margin: 0rem 4rem;
+}
+
+.hero-section {}

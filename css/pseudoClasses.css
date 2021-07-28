@@ -1,0 +1,40 @@
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    font-size: 2rem;
+}
+
+button {
+    padding: 2rem 4rem;
+}
+
+button:hover {
+    background: lightslategray;
+    padding: 2rem 5rem;
+}
+
+button:focus {
+    background: yellow;
+}
+
+input:focus {
+    background: green;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h1::before {
+    content: "Well... "
+}
+
+h1::after {
+    content: "... How's life?"
+}
