@@ -86,7 +86,7 @@ nav li {
 }*/
 
 .hero-section {
-    background-image: url("../res/img/baking-background-with-free-space-802536.jpg");
+    background-image: url("../../res/img/baking-background-with-free-space-802536.jpg");
     height: 85%;
     background-color: black;
     background-size: cover;
@@ -106,7 +106,6 @@ nav li {
     cursor: pointer;
 }
 
-.hero-section button:hover {}
 
 .form-section {
     text-align: center;
