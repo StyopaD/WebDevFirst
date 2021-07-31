@@ -1,0 +1,167 @@
+/*Once the resolution of the viewport is greater than the stated min-width
+css will apply the rules here!*/
+@media only screen and (min-width: 650px) {
+    .server {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .subhead {
+        font-size: 1.4rem;
+        margin-bottom: 12%;
+    }
+
+    .blue-container {
+        margin: 0;
+    }
+
+    .blue-container img {
+        width: 20%;
+    }
+
+    .blue-container ul li:nth-child(3) img {
+        width: 12%;
+        margin-top: -1.3rem;
+    }
+
+    .blue-container ul {
+        display: flex;
+        margin-top: -1rem;
+        align-items: center;
+    }
+
+    .blue-container ul li {
+        margin-bottom: 0;
+    }
+
+    .blue-container ul li p {
+        padding: 0 0.8rem;
+    }
+
+    .gray-container ul {
+        display: flex;
+    }
+
+    nav ul {
+        width: 40%;
+    }
+
+    .cta {
+        width: 70%;
+        margin: 3% auto 7% auto;
+    }
+}
+
+@media only screen and (min-width: 875px) {
+    .sub-head {
+        margin-bottom: 15%;
+    }
+
+    .blue-container ul {
+        margin: 0 0 4% 0;
+    }
+
+    .gray-container ul {
+        margin: 4% 0 0 0;
+    }
+
+    .cta {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cta {
+        width: 50%;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .show-desktop {
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+
+    .show-mobile {
+        display: none;
+    }
+
+    nav ul {
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+
+    nav ul li a {
+        color: black;
+        background-color: white;
+        text-align: right;
+        padding: 1rem 2rem;
+    }
+
+    nav ul li a:hover {
+        background-color: rgb(217, 242, 255);
+    }
+
+    .scroll {
+        width: 2rem;
+        animation: move .4s infinite alternate;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateY(0px);
+        }
+
+        100% {
+            transform: translateY(20px);
+            ;
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .server {
+        width: 40%;
+        margin: 5rem auto 4rem;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    .blue-container {
+        padding: 7rem 0 2rem 0;
+    }
+
+    .blue-container ul li p,
+    blockquote {
+        font-size: 1.3rem;
+    }
+
+    .gray-container {
+        padding: 6rem 0 4rem 0;
+    }
+
+    h2 {
+        margin-top: 4rem;
+    }
+
+    .blue-container img {
+        width: 15%;
+    }
+
+    .blue-container ul li:nth-child(3) img {
+        width: 8%;
+        margin-top: -0.4rem;
+    }
+}
