@@ -1,0 +1,217 @@
+$Col_BlueBase:#007AF3;
+
+:root {
+    --primary-color: #007AF3;
+}
+
+a {
+    color: #444444;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: .8rem;
+    margin-bottom: 1rem;
+    border-radius: .3rem;
+    border: 0.1rem solid gray;
+}
+
+.navbar {
+    background: white;
+    padding: 1rem;
+
+    .logo {
+        font-weight: bold;
+        color: black;
+        font-size: 1.2rem;
+
+        span {
+            /*BOTH OPTIONS WORK*/
+            color: var(--primary-color);
+            color: $Col_BlueBase;
+            /*This option is the SCSS one!*/
+        }
+    }
+
+    nav {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+    }
+}
+
+.hero-section {
+    text-align: center;
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 2.3rem;
+        margin: 1rem 0;
+    }
+
+    .left-col {
+        .subhead {
+            text-transform: uppercase;
+            color: gray;
+            letter-spacing: .3rem;
+        }
+    }
+
+    .primary-cta {
+        background-color: $Col_BlueBase;
+        color: white;
+        border-radius: 1.4rem;
+        padding: .6rem 1.3rem;
+        font-size: 1.4rem;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    .watch-video-cta {
+        display: block;
+        margin-top: 1rem;
+
+        img {
+            margin-right: .5rem;
+            transform: translateY(26%);
+        }
+    }
+
+    .hero-img {
+        width: 70%;
+        margin-top: 3rem;
+    }
+}
+
+section.features-section {
+    background: #20272E;
+    color: white;
+
+    ul.features-list {
+        padding-left: .1rem;
+
+        li {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            margin-left: 2rem;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                width: 1.4rem;
+                height: 1.4rem;
+                left: -2rem;
+                background-image: url("../../res/ico/bullet.svg");
+                background-size: contain;
+            }
+        }
+    }
+
+    img {
+        display: none;
+    }
+}
+
+.testimonials-section {
+    color: white;
+    background: $Col_BlueBase;
+
+    ul {
+        li {
+            background: #006BD6;
+            text-align: center;
+            padding: 2rem 1rem;
+            width: 80%;
+            margin: 0 auto 4rem auto;
+            border-radius: 1rem;
+
+            img {
+                width: 5rem;
+                height: 5rem;
+                border: .3rem solid #006BD6;
+                margin-top: -5rem;
+                border-radius: 5rem;
+            }
+        }
+    }
+}
+
+/*
+input[type="submit"]{
+Is perfectly fine, but this works as well!
+    */
+.send-message-cta {
+    background-color: $Col_BlueBase;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: bottom 5rem;
+    border-radius: 5rem;
+    display: inline-block;
+    padding: .8rem 2rem;
+    width: unset;
+    cursor: pointer;
+}
+
+iframe {
+    width: 100%;
+    height: 20rem;
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: #20272E;
+    height: 100vh;
+    padding: 1rem;
+
+    ul.primary-nav {
+        margin-top: 5rem;
+    }
+
+    li {
+        a {
+            color: white;
+            display: block;
+            padding: .5rem;
+            font-size: 1.3rem;
+            text-align: right;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.mobile-menu-exit {
+    float: right;
+    margin: .5rem;
+    cursor: pointer;
+}
