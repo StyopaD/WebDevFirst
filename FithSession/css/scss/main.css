@@ -1,0 +1,11 @@
+.neon-button {
+  font-size: 4rem;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em white, 0 0 0.125em currentColor;
+}
+/*# sourceMappingURL=main.css.map */
