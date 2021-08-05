@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #007AF3;
+    --dark-back-color: #20272E;
+    --mid-dark-back-color: #2f3943;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
 
 @font-face {

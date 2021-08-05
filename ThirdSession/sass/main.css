@@ -1,7 +1,4 @@
-:root {
-  --primary-color: #007AF3;
-}
-
+@import url("../css/generalTokens.css");
 a {
   color: #444444;
 }
@@ -34,6 +31,9 @@ textarea {
   font-weight: bold;
   color: black;
   font-size: 1.2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .navbar .logo span {
@@ -107,6 +107,10 @@ section.features-section {
 
 section.features-section ul.features-list {
   padding-left: .1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
 
 section.features-section ul.features-list li {
@@ -181,16 +185,20 @@ nav.menu-btn {
 nav {
   position: fixed;
   z-index: 999;
-  width: 66%;
+  width: 45%;
   right: 0;
   top: 0;
-  background: #20272E;
+  background: var(--dark-back-color);
   height: 100vh;
-  padding: 1rem;
 }
 
 nav ul.primary-nav {
   margin-top: 5rem;
+}
+
+nav li {
+  margin: .5rem 0;
+  padding: .4rem;
 }
 
 nav li a {
@@ -199,15 +207,26 @@ nav li a {
   padding: .5rem;
   font-size: 1.3rem;
   text-align: right;
+  padding: 0 1rem;
 }
 
-nav li a:hover {
+nav li:hover {
   font-weight: bold;
+  background-color: var(--mid-dark-back-color);
+}
+
+#darken {
+  position: fixed;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  width: 100vw;
+  z-index: 800;
 }
 
 .mobile-menu-exit {
   float: right;
-  margin: .5rem;
+  margin: 1.5rem;
   cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,93 @@
+@import url("../css/generalTokens.css");
+
+@media only screen and (min-width: 775px) {
+
+    .mobile-menu,
+    .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 130px auto;
+        justify-content: unset;
+    }
+
+    .navbar nav {
+        display: flex;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+
+            a {
+                font-size: 1em;
+                color: black;
+                padding: .1rem 1rem;
+                text-align: center;
+            }
+
+            &.primary-nav {
+                margin: 0;
+            }
+
+            li {
+                margin: 0;
+                width: 7rem;
+                align-content: center;
+                height: 1rem;
+
+                &:hover a {
+                    font-weight: bold;
+                }
+
+                &.current a {
+                    font-weight: bold;
+                }
+
+                &:hover {
+                    color: white;
+                    background-color: white;
+                    font-weight: normal;
+                }
+
+                &.go-premium-cta {
+
+                    width: 10rem;
+
+                    a {
+                        color: var(--primary-color);
+                        border: 3px solid var(--primary-color);
+                        font-weight: bold;
+                        border-radius: 5rem;
+                        margin-top: -.2rem;
+
+                        &:hover {
+                            color: white;
+                            background-color: var(--primary-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    section {
+        padding: 100rem 4rem;
+    }
+
+    .container {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+
+    .hero .container {}
+}

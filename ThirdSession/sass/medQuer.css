@@ -1,0 +1,86 @@
+@import url("../css/generalTokens.css");
+@media only screen and (min-width: 775px) {
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 130px auto;
+        grid-template-columns: 130px auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav ul a {
+    font-size: 1em;
+    color: black;
+    padding: .1rem 1rem;
+    text-align: center;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav ul li {
+    margin: 0;
+    width: 7rem;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 1rem;
+  }
+  .navbar nav ul li:hover a {
+    font-weight: bold;
+  }
+  .navbar nav ul li.current a {
+    font-weight: bold;
+  }
+  .navbar nav ul li:hover {
+    color: white;
+    background-color: white;
+    font-weight: normal;
+  }
+  .navbar nav ul li.go-premium-cta {
+    width: 10rem;
+  }
+  .navbar nav ul li.go-premium-cta a {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    font-weight: bold;
+    border-radius: 5rem;
+    margin-top: -.2rem;
+  }
+  .navbar nav ul li.go-premium-cta a:hover {
+    color: white;
+    background-color: var(--primary-color);
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  section {
+    padding: 100rem 4rem;
+  }
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=medQuer.css.map */

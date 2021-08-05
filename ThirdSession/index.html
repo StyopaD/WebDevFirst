@@ -9,11 +9,12 @@
     <meta http-equiv="X-UA-Ccompatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="sass/main.css">
-    <link rel="stylesheet" href="css/mediaQueries.css">
+    <link rel="stylesheet" href="sass/medQuer.css">
     <link rel="stylesheet" href="css/generalTokens.css">
     <title>SCSS developing!</title>
 </head>
 <body>
+    <div id="darken"></div>
     <header>
         <div class="navbar">
             <div class="container">
@@ -30,7 +31,7 @@
                     </ul>
                     <ul class="secondary-nav">
                         <li><a href="#">Contact</a></li>
-                        <li><a href="#" class="go-premium-cta">Premium</a></li>
+                        <li class="go-premium-cta"><a href="#">Go Premium</a></li>
                     </ul>
                 </nav>
             </div>
@@ -101,17 +102,6 @@
     <footer>
 
     </footer>
-    <script>
-        const mobileBtn = document-getElementById('mobile-cta')
-        nav = document.querySelector('nav')
-        mobileBtnExit = document.getElementById('mobile-exit');
-
-        mobileBtn.addEventListener('click', ()=>{
-            nav.classList.add('menu-btn');
-        });
-        mobileBtnExit.addEventListener('click', ()=>{
-            nav.classList.remove('menu-btn');
-        });
-    </script>
+    <script src="../ThirdSession/js/basic.js"></script>
 </body>
 </html>
