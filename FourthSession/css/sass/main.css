@@ -1,0 +1,86 @@
+@import url("../sass/baseTokens.css");
+.left-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 20rem 0 0 10rem;
+}
+
+.left-container header {
+  height: 50%;
+}
+
+.left-container header h1 {
+  font-family: cocoBold;
+  position: absolute;
+  top: 15%;
+  left: -6%;
+  color: rgba(237, 174, 78, 0.2);
+  font-size: 20rem;
+  z-index: -1;
+}
+
+.left-container header h2, .left-container header h2 span {
+  z-index: 1;
+  font-size: 5rem;
+}
+
+.left-container header h2 span {
+  font-family: cocoRegular;
+  color: #ff6600;
+}
+
+.left-container p {
+  height: 50%;
+  width: 40%;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.right-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 40%;
+  -webkit-transform: rotate(10deg) scale(1.05) translateY(-4rem);
+          transform: rotate(10deg) scale(1.05) translateY(-4rem);
+}
+
+.right-container ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  padding: 10px;
+  grid-gap: 1rem 1rem;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.right-container ul li {
+  background-color: var(--main-background-color);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  padding: 40% 0;
+}
+
+.right-container ul li img {
+  margin-top: -1rem;
+  height: 50px;
+  width: 50px;
+  -webkit-filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(42deg) brightness(117%) contrast(101%);
+          filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(42deg) brightness(117%) contrast(101%);
+}
+
+.right-container ul li cite {
+  display: block;
+}
+
+.right-container ul li:hover {
+  background-color: var(--medium-background-color);
+}
+/*# sourceMappingURL=main.css.map */

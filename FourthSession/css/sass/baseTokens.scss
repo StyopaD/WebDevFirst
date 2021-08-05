@@ -1,0 +1,69 @@
+:root {
+    --primary-color: #007AF3;
+    --dark-back-color: #20272E;
+    --mid-dark-back-color: #2f3943;
+    --main-background-color: #1a1a1a;
+    --medium-background-color: #222222;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+@font-face {
+    font-family: cocoBold;
+    src: url('../../../res/fon/cocogoose/Cocogoose_Pro-trial.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: cocoItalic;
+    src: url('../../../res/fon/cocogoose/Cocogoose_Pro_Italic-trial.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: cocoRegular;
+    src: url('../../../res/fon/cocogoose/Cocogoose_Pro_Light-trial.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: cocoRegularItalic;
+    src: url('../../../res/fon/cocogoose/Cocogoose_Pro_Light-trial.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: cocoThin;
+    src: url('../../../res/fon/cocogoose/Cocogoose_Pro_Thin-trial.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: cocoThinItalic;
+    src: url('../../../res/fon/cocogoose/Cocogoose_Pro_Thin_Italic-trial.ttf') format('truetype');
+}
+
+
+
+html,
+body,
+main {
+    color: var(--main-background-color);
+    height: 100%;
+    width: 100%;
+    font-family: cocoRegular;
+}
+
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    font-size: 1rem;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    background: #F2F2F2;
+    overflow: hidden
+}

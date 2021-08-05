@@ -1,9 +1,8 @@
-var menu = document.getElementById("menu");
-var nav = document.getElementById("nav");
-var exit = document.getElementById("exit");
-var something = document.getElementById("Something");
-var server = document.getElementById("server");
-
+const menu = document.getElementById("menu")
+nav = document.getElementById("nav")
+exit = document.getElementById("exit")
+something = document.getElementById("Something")
+server = document.getElementById("server");
 menu.addEventListener('click', function(e){
     nav.style.display = "flex";
     e.preventDefault();
