@@ -1,0 +1,57 @@
+@import url("baseTokens.css");
+/* The color pickers */
+label[name="color"] {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0.5em;
+}
+
+input[type="radio"] {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0.5em;
+}
+
+label:not(.hilt) {
+  color: white;
+  font-weight: bold;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+#on-off {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.lightsaber {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+}
+
+.hilt {
+  display: block;
+  width: .75rem;
+  height: 7rem;
+  background-color: red;
+  border-radius: 0 0 4px 4px;
+  /*The linear-gradient can directly encompass linear gradients with different colors.
+    The cool hting is that whenever the starting point of a new color is smaller than the
+    ending point of the previous color, the linear gradient just disappears and becomes
+    a literal line, which is what we want, so we will just put 0!*/
+  background-image: linear-gradient(silver 0 10px, silver 0 15px, #ffae00 0 20px, silver 0 22px, black 0 25px, silver 0 27px, black 0 30px, silver 0 32px, black 0 35px, silver 0 37px, black 0 40px, silver 0 42px, black 0 45px, silver 0 47px, black 0 50px, silver 0 60px, #ffae00 60px 80px, silver 0 100%);
+}
+
+.blade {
+  position: absolute;
+}
+/*# sourceMappingURL=main.css.map */

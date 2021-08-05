@@ -1,0 +1,68 @@
+@import url("baseTokens.css");
+
+/* The color pickers */
+
+label[name="color"] {
+    grid-row: 1;
+    align-self: center;
+    margin: 0.5em;
+}
+
+input[type="radio"] {
+    grid-row: 2;
+    align-self: center;
+    margin: 0.5em;
+}
+
+label:not(.hilt) {
+    color: white;
+    font-weight: bold;
+    align-self: start;
+}
+
+#on-off {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.lightsaber {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    //transform: scale(1.8);
+}
+
+.hilt {
+    display: block;
+    width: .75rem;
+    height: 7rem;
+    background-color: red;
+    border-radius: 0 0 4px 4px;
+    /*The linear-gradient can directly encompass linear gradients with different colors.
+    The cool hting is that whenever the starting point of a new color is smaller than the
+    ending point of the previous color, the linear gradient just disappears and becomes
+    a literal line, which is what we want, so we will just put 0!*/
+    background-image: linear-gradient(silver 0 10px,
+            silver 0 15px,
+            rgb(255, 174, 0) 0 20px,
+            silver 0 22px,
+            black 0 25px,
+            silver 0 27px,
+            black 0 30px,
+            silver 0 32px,
+            black 0 35px,
+            silver 0 37px,
+            black 0 40px,
+            silver 0 42px,
+            black 0 45px,
+            silver 0 47px,
+            black 0 50px,
+            silver 0 60px,
+            rgb(255, 174, 0) 60px 80px,
+            silver 0 100%);
+}
+
+.blade {
+    position: absolute;
+}
