@@ -127,28 +127,34 @@ label:not(.hilt) {
           transform: scaleY(1);
 }
 
-input[id="yellow"]:checked ~ .lightsaber {
+input[id="yellow"]:checked ~ .lightsaber,
+input[id="yellow"]:checked ~ #touchMe {
   --blade-hue: 60;
 }
 
-input[id="green"]:checked ~ .lightsaber {
+input[id="green"]:checked ~ .lightsaber,
+input[id="green"]:checked ~ #touchMe {
   --blade-hue: 120;
 }
 
-input[id="blue"]:checked ~ .lightsaber {
+input[id="blue"]:checked ~ .lightsaber,
+input[id="blue"]:checked ~ #touchMe {
   --blade-hue: 200;
 }
 
-input[id="purple"]:checked ~ .lightsaber {
+input[id="purple"]:checked ~ .lightsaber,
+input[id="purple"]:checked ~ #touchMe {
   --blade-hue: 290;
 }
 
-input[id="red"]:checked ~ .lightsaber {
+input[id="red"]:checked ~ .lightsaber,
+input[id="red"]:checked ~ #touchMe {
   --blade-hue: 360;
 }
 
-input[id="darksaber"]:checked ~ .lightsaber {
-  --blade-hue: 120;
+input[id="darksaber"]:checked ~ .lightsaber,
+input[id="darksaber"]:checked ~ #touchMe {
+  --blade-hue: 0;
   --blade-lightness: 100%;
 }
 
@@ -194,31 +200,80 @@ input[id="darksaber"]:checked ~ .lightsaber .blade {
           transform: perspective(15rem) translateY(-27rem) translateZ(4rem) translateX(35rem) rotateX(16deg) rotateZ(-125deg) rotateY(-5deg) scale(3);
 }
 
-/*
-.letters {
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    z-index: -5;
-    font-size: 3rem;
-    transform: perspective(15rem) translateY(25rem) rotateY(20deg) rotateZ(0deg) rotateX(0deg);
-    animation: goUP linear 2s;
-    animation-iteration-count: infinite;
+#touchMe {
+  color: hsla(var(--blade-hue), 100%, var(--blade-lightness), 1);
+  display: block;
+  -webkit-transform: perspective(15rem) translateX(45rem) translateY(-8rem) translateZ(4rem) rotateX(14deg) rotateZ(-24deg) rotateY(-5deg) scale(3);
+          transform: perspective(15rem) translateX(45rem) translateY(-8rem) translateZ(4rem) rotateX(14deg) rotateZ(-24deg) rotateY(-5deg) scale(3);
+  position: relative;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+  -webkit-animation: nowYouSeeMe .2s linear 1;
+          animation: nowYouSeeMe .2s linear 1;
+  text-shadow: 2px 2px 2px black;
 }
 
-@keyframes goUP {
-    10% {
-        z-index: 1;
-    }
-
-    50% {
-        transform: perspective(15rem) translateY(0rem) rotateY(20deg) rotateZ(0deg) rotateX(0deg);
-    }
+#touchMe::after {
+  content: '';
+  position: absolute;
+  width: 101%;
+  height: 100%;
+  top: -3%;
+  left: -3%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-image: url("../../res/ico/doublearrow.svg");
+  -webkit-filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(var(--blade-hue)) brightness(var(--blade-lightness)) contrast(100%);
+          filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(var(--blade-hue)) brightness(var(--blade-lightness)) contrast(100%);
+  -webkit-filter: drop-shadow(0 0 0.03rem);
+          filter: drop-shadow(0 0 0.03rem);
+  background-size: contain;
+  -webkit-animation: lilPan 1.5s linear infinite;
+          animation: lilPan 1.5s linear infinite;
+  z-index: -1;
 }
 
-*/
-.touchMe {
-  -webkit-transform: perspective(15rem) translateX(40rem) translateY(-10rem) translateZ(4rem) rotateX(14deg) rotateZ(-22deg) rotateY(-5deg) scale(3);
-          transform: perspective(15rem) translateX(40rem) translateY(-10rem) translateZ(4rem) rotateX(14deg) rotateZ(-22deg) rotateY(-5deg) scale(3);
+@-webkit-keyframes lilPan {
+  50% {
+    -webkit-transform: rotate(180deg) translateX(-4%);
+            transform: rotate(180deg) translateX(-4%);
+  }
+}
+
+@keyframes lilPan {
+  50% {
+    -webkit-transform: rotate(180deg) translateX(-4%);
+            transform: rotate(180deg) translateX(-4%);
+  }
+}
+
+@-webkit-keyframes nowYouSeeMe {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes nowYouSeeMe {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=secondSection.css.map */

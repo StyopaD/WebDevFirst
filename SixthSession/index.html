@@ -10,10 +10,20 @@
         <link rel="stylesheet" href="css/baseTokens.css">
         <link rel="stylesheet" href="css/firstSection.css">
         <link rel="stylesheet" href="css/secondSection.css">
+        <link rel="stylesheet" href="css/thirdSection.css">
         <link rel="stylesheet" href="css/myQueries.css">
         <title>Fun button Project!</title>
     </head>
 <body>
+    <section class="thirdSection">
+        <div class="centerCircle">
+            <div class="centerVertical"></div>
+        </div>
+        
+    </section>
+    <section class="firstSection">
+        <a href="#" class="neon-button">Scheiße</a>
+    </section>
     <section class=secondSection>
         <label for="yellow">Yellow</label>
         <input type="radio" id="yellow" name="color">
@@ -27,15 +37,13 @@
         <input type="radio" id="red" name="color">
         <label for="darksaber">Darksaber</label>
         <input type="radio" id="darksaber" name="color" checked>
-        <div class="lightsaber">
-            <input type="checkbox" id="on-off" checked>
+        <div class="lightsaber" id="saber">
+            <input type="checkbox" id="on-off">
             <div class="blade"></div>
             <label class="hilt" for="on-off"></label>
         </div>
-        <div class="touchMe">Touch me!</div>
+        <div id="touchMe">Touch me!</div>
     </section>
-    <section class="firstSection">
-        <a href="#" class="neon-button">Scheiße</a>
-    </section>
+    <script src="js/basic.js"></script>
 </body>
 </html>

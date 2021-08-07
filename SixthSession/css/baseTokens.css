@@ -9,6 +9,8 @@
   --clr-bg: hsl(323 21% 16%);
   --blade-hue: 120;
   --blade-lightness: 50%;
+  --background-rotation: -27deg;
+  --centerCircle-rotation: 63deg;
 }
 
 @font-face {
@@ -95,5 +97,14 @@ body section.secondSection {
   place-items: center;
   font-size: 1.5rem;
   padding: 3rem;
+}
+
+body section.thirdSection {
+  overflow: hidden;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--background-rotation)), color-stop(#3226dd6b), color-stop(#e6896400), to(#269add65)), -webkit-gradient(linear, left top, left bottom, from(var(--background-rotation)), color-stop(#dd3b26), color-stop(#e68964), to(#dd3b26));
+  background: linear-gradient(var(--background-rotation), #3226dd6b, #e6896400, #269add65), linear-gradient(var(--background-rotation), #dd3b26, #e68964, #dd3b26);
 }
 /*# sourceMappingURL=baseTokens.css.map */

@@ -8,6 +8,8 @@
     --clr-bg: hsl(323 21% 16%);
     --blade-hue: 120;
     --blade-lightness: 50%;
+    --background-rotation: -27deg;
+    --centerCircle-rotation: 63deg;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
@@ -90,6 +92,15 @@ body {
             place-items: center;
             font-size: 1.5rem;
             padding: 3rem;
+        }
+
+        &.thirdSection {
+            overflow: hidden;
+            place-items: center;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(var(--background-rotation), #3226dd6b, #e6896400, #269add65),
+                linear-gradient(var(--background-rotation), #dd3b26, #e68964, #dd3b26);
         }
     }
 }
